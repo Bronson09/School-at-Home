@@ -3,27 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bronson <bronson@student.42.fr>            +#+  +:+       +#+        */
+/*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 19:15:07 by bronson           #+#    #+#             */
-/*   Updated: 2023/01/26 19:18:57 by bronson          ###   ########.fr       */
+/*   Updated: 2023/01/29 12:48:23 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_numeric(char *str)
 {
-	int	str_numeric;
 	int	i;
 
-	str_numeric = 0;
-	i = 1;
+	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] < '0' && (str[i] > '9'))
+		if (str[i] >= '0' && (str[i] <= '9'))
 		{
-			str_numeric = 0;
+			i++;
 		}
-		i++;
+		else
+		{
+			return (0);
+		}
 	}
-	return (str_numeric);
+	return (1);
 }

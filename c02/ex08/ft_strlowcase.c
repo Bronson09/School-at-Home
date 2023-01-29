@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bronson <bronson@student.42.fr>            +#+  +:+       +#+        */
+/*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 19:36:31 by bronson           #+#    #+#             */
-/*   Updated: 2023/01/26 19:37:22 by bronson          ###   ########.fr       */
+/*   Updated: 2023/01/29 14:47:23 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
-    int i;
+	int	i;
 
     i = 0;
-    while (str[i] != '\0')
-    {
-        if (str[i] >= 'A' && str[i] <= 'Z')
-        {
-            str[i] += 32;
-        }
-        i++;
-    }
-    return (str);
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] += 32;
+		}
+		i++;
+	}
+	return (str);
 }
