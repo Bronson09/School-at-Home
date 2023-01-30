@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/26 19:36:31 by bronson           #+#    #+#             */
-/*   Updated: 2023/01/30 06:14:55 by gbeaulie         ###   ########.fr       */
+/*   Created: 2023/01/30 08:35:39 by gbeaulie          #+#    #+#             */
+/*   Updated: 2023/01/30 10:26:32 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
-{
-	int	i;
+#include <unistd.h>
+// #include <stdio.h>
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-			str[i] += 32;
-		}
-		i++;
-	}
-	return (str);
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
 }
+
+void	ft_putstr(char *str)
+{
+	while (*str != '\0')
+	{
+		ft_putchar(*str);
+		str++;
+	}
+}
+
+// int	main(void)
+// {
+// 	char	*test;
+
+// 	test = "Noopy, Ohh il est con ce Noopy";
+// 	ft_putstr(test);
+// 	write (1, "\n", 1);
+// 	return (0);
+// }

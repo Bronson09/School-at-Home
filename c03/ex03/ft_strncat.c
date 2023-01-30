@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/26 19:36:31 by bronson           #+#    #+#             */
-/*   Updated: 2023/01/30 06:14:55 by gbeaulie         ###   ########.fr       */
+/*   Created: 2023/01/30 07:39:41 by gbeaulie          #+#    #+#             */
+/*   Updated: 2023/01/30 07:40:00 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
+	int				count_dest;
+	int unsigned	count_src;
 
-	i = 0;
-	while (str[i] != '\0')
+	count_dest = 0;
+	count_src = 0;
+	while (dest[count_dest] != '\0')
+		count_dest++;
+	while (src[count_src] != '\0' && (count_src < nb))
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-			str[i] += 32;
-		}
-		i++;
+		dest[count_dest] = src[count_src];
+		count_dest++;
+		count_src++;
 	}
-	return (str);
+	dest[count_dest] = '\0';
+	return (dest);
 }

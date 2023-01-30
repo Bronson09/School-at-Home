@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/26 19:36:31 by bronson           #+#    #+#             */
-/*   Updated: 2023/01/30 06:14:55 by gbeaulie         ###   ########.fr       */
+/*   Created: 2023/01/30 07:41:09 by gbeaulie          #+#    #+#             */
+/*   Updated: 2023/01/30 07:41:17 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
+	int	tmp;
 
-	i = 0;
-	while (str[i] != '\0')
+	if (*to_find == '\0')
+		return (str);
+	while (*str != '\0')
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		if (*str == *to_find)
 		{
-			str[i] += 32;
+			i = 0;
+			tmp = 0;
+			while (to_find[i] != '\0')
+			{
+				if (str[i] != to_find[i])
+					tmp = 1;
+				i++;
+			}
+			if (tmp == 0)
+				return (str);
 		}
-		i++;
+		str++;
 	}
-	return (str);
+	return (0);
 }
