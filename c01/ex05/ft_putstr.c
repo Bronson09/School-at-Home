@@ -6,11 +6,12 @@
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 07:39:30 by gbeaulie          #+#    #+#             */
-/*   Updated: 2023/01/23 09:04:05 by gbeaulie         ###   ########.fr       */
+/*   Updated: 2023/02/02 11:43:21 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -28,3 +29,12 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+
+// int	main(void)
+// {
+// 	char	*str;
+
+// 	str = "Hello there. wink-wink";
+// 	ft_putstr(str);
+// 	return (0);
+// }

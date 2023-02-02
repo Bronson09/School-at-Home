@@ -6,11 +6,11 @@
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 09:03:21 by gbeaulie          #+#    #+#             */
-/*   Updated: 2023/01/23 06:55:22 by gbeaulie         ###   ########.fr       */
+/*   Updated: 2023/02/02 09:47:26 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 
 void	ft_swap(int *a, int *b)
 {

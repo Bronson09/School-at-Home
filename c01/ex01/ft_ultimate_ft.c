@@ -6,7 +6,7 @@
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 05:32:28 by gbeaulie          #+#    #+#             */
-/*   Updated: 2023/02/01 11:35:13 by gbeaulie         ###   ########.fr       */
+/*   Updated: 2023/02/02 09:46:17 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,30 +17,30 @@ void	ft_ultimate_ft(int *********nbr)
 	*********nbr = 42;
 }
 
-int	main(void)
-{
-	int	a;
-	int *nbr;
-	int	**nbr2;
-	int ***nbr3;
-	int ****nbr4;
-	int *****nbr5;
-	int ******nbr6;
-	int *******nbr7;
-	int ********nbr8;
-	int *********nbr9;
+// int	main(void)
+// {
+// 	int	a;
+// 	int *nbr;
+// 	int	**nbr2;
+// 	int ***nbr3;
+// 	int ****nbr4;
+// 	int *****nbr5;
+// 	int ******nbr6;
+// 	int *******nbr7;
+// 	int ********nbr8;
+// 	int *********nbr9;
 
-	a = 42;
-	nbr = &a;
-	nbr2 = &nbr;
-	nbr3 = &nbr2;
-	nbr4 = &nbr3;
-	nbr5 = &nbr4;
-	nbr6 = &nbr5;
-	nbr7 = &nbr6;
-	nbr8 = &nbr7;
-	nbr9 = &nbr8;
+// 	a = 42;
+// 	nbr = &a;
+// 	nbr2 = &nbr;
+// 	nbr3 = &nbr2;
+// 	nbr4 = &nbr3;
+// 	nbr5 = &nbr4;
+// 	nbr6 = &nbr5;
+// 	nbr7 = &nbr6;
+// 	nbr8 = &nbr7;
+// 	nbr9 = &nbr8;
 
-	printf("Quel est la valeur de *********nbr? : %d\n", *nbr);
-	return (0);
-}
+// 	printf("Quel est la valeur de *********nbr? : %d\n", *nbr);
+// 	return (0);
+// }

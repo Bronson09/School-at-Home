@@ -6,9 +6,11 @@
 /*   By: gbeaulie <gbeaulie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 09:05:55 by gbeaulie          #+#    #+#             */
-/*   Updated: 2023/01/23 09:59:08 by gbeaulie         ###   ########.fr       */
+/*   Updated: 2023/02/02 12:13:44 by gbeaulie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -21,3 +23,12 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
+
+// int	main(void)
+// {
+// 	char	*str;
+
+// 	str = "Hello there. wink-wink";
+// 	printf("%s\n", str);
+// 	printf("Combien de caractères ? : %d\n", ft_strlen(str));
+// }
